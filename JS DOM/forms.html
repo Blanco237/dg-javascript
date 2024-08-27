@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Forms</title>
+  </head>
+  <body>
+    <h1 id="title">Working with Forms</h1>
+    <form>
+      <fieldset>
+        <legend>User Information</legend>
+        <label>
+            Name:
+            <input type="text" placeholder="Enter your name" name="fname" />
+          </label>
+          <br>
+          <br>
+          <label for="uemail">Email</label>
+          <input id="uemail" type="email" placeholder="Enter your email" />
+          <br />
+          <br />
+          <label for="uage">Age</label>
+          <input
+            id="uage"
+            type="number"
+            placeholder="Age"
+            name="age"
+            maxlength=""
+          />
+          
+          <br />
+          <br />
+          <textarea placeholder="Tell us about yourself"></textarea>
+      </fieldset>
+      <br />
+     <!--DEMOGRAPHIC INFORMATION ABOUT USER-->
+     <!--TODO: UPDATE FIELDSET LEGEND-->
+      <fieldset>
+        <legend>Demographics</legend>
+        <path>Select Gender</path>
+
+      <label
+        >Male
+
+        <input type="radio" name="gender" value="male" />
+      </label>
+      <label
+        >Female
+        <input type="radio" name="gender" value="female" />
+      </label>
+      <h6>Select Hobbies</h6>
+      <label>
+        Swimming
+        <input type="checkbox" name="hobby" value="swimming" />
+      </label>
+      <label>
+        Reading
+        <input type="checkbox" name="hobby" value="reading" />
+      </label>
+      <label>
+        Sleeping
+        <input type="checkbox" name="hobby" value="sleeping" />
+      </label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>&lt;Randomz&gt;&nbsp;&nbsp;&nbsp;</legend>
+        <label>
+            Which browser do you use?
+            <select name="browser">
+              <option value="chrome">Google Chrome</option>
+              <option value="edge">Microsoft Edge</option>
+              <option value="firefox">Mozilla Firefox</option>
+              <option value="opera">Opera</option>
+              <option value="safari">Safari</option>
+            </select>
+            <br />
+            <br />
+        </label>
+        <input type="file" name="document" accept="image/*" multiple  />
+      </fieldset>
+    <br />
+    <br />
+    <button type="submit" > Btn Submit</button>
+    <button type="reset" > Btn reset</button>
+    
+      <input type="submit"  value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    <script src="dom.js"></script>
+  </body>
+</html>
