@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table</title>
+    <style>
+      body {
+        padding: 1rem;
+      }
+      #table {
+        margin-top: 1rem;
+      }
+      tr:not(:first-of-type) {
+        background-color: rgb(219, 219, 219);
+      }
+      tr:nth-child(even) {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Name" id="name" />
+    <input type="text" placeholder="Enter Profession" id="profession" />
+    <button id="add">Add Person</button>
+    <table id="table" border="1">
+      <thead>
+        <th>Name</th>
+        <th>Profession</th>
+        <th></th>
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td>Some Name</td>
+          <td>Some Profession</td>
+          <td>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="table.js"></script>
+  </body>
+</html>
