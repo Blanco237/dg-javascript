@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <style>
+      body {
+        padding: 1rem;
+      }
+      ul {
+        list-style-type: none;
+      }
+      label:has(input:checked) {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To do List</h1>
+    <ul id="list-body">
+      <li>
+        <label>
+          <input type="checkbox" name="sleep" />
+          <span>Sleep</span>
+        </label>
+      </li>
+    </ul>
+    <input type="text" placeholder="Enter Todo" id="todo" />
+    <script src="todo.js"></script>
+    <script src="storage.js"></script>
+  </body>
+</html>

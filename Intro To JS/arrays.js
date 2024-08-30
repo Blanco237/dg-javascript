@@ -61,4 +61,30 @@ function removeFalsy(arr) {
     })
 }
 
-console.log(removeFalsy([NaN, 0, 15, false, -22, '',undefined, 47, null]))
+// console.log(removeFalsy([NaN, 0, 15, false, -22, '',undefined, 47, null]))
+
+const arr = [10, 23, 45, 26, 14, 13, 8, 12, 27, 32, 45, 67];
+
+function getRemainder(n) {
+    
+}
+
+const newArr = arr.map((num) => {
+    return num % 10
+})
+
+console.log(newArr)
+
+const something = arr.forEach((num) => {
+    console.log(num)
+})
+console.log(something) 
+
+console.log("For of")
+
+for(let num of arr) {
+    console.log(num)
+    if(num === 12) {
+        break;
+    }
+}
